@@ -10,6 +10,12 @@
 
 The idea is simple: the Roblox Studio workflow (Luau scripts, a tree of Instances, [Rojo](https://github.com/rojo-rbx/rojo) sync, any editor you like) working on Linux, without depending on Roblox to play and test. You write the game as code, the engine opens a window, runs the scripts and shows the result in 3D.
 
+## Principles
+
+1. **A simple, accessible studio.** Open the project, press run, see your game. No account, no heavy install, no proprietary tools: a small program and plain files on disk, with the editor you already use. It should run well on modest hardware (the reference machine is an integrated Intel GPU).
+2. **Performance is a priority.** A short edit-to-screen loop (today: about 66 ms from saving a file to the DataModel), a steady frame rate, and no hidden cost. Performance claims are always backed by a measurement (`STUDIO_EXIT_AFTER` prints FPS), never by opinion.
+3. **Open development.** Open source (MIT or Apache-2.0), built in the open: decisions are written down in [`studio/docs/decisions.md`](studio/docs/decisions.md), work is tracked in public issues, and contributions are welcome under the [clean-room rule](CONTRIBUTING.md).
+
 ## Why this exists
 
 - Roblox Studio does not run on Linux. People who develop with it need Windows, macOS, or workarounds.

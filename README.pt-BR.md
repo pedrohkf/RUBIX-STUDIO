@@ -6,6 +6,12 @@ Um **Studio leve para desenvolver e rodar jogos**, escrito em Rust, para Linux.
 
 A ideia é simples: o fluxo de trabalho do Roblox Studio (scripts em Luau, árvore de Instances, sincronização com [Rojo](https://github.com/rojo-rbx/rojo) e editor de código à escolha) funcionando em Linux, sem depender do Roblox para jogar e testar. Você escreve o jogo como código, a engine abre uma janela, roda os scripts e mostra o resultado em 3D.
 
+## Princípios
+
+1. **Um studio simples e acessível.** Abrir o projeto, apertar rodar e ver o jogo. Sem conta, sem instalação pesada, sem ferramentas proprietárias: um programa pequeno e arquivos comuns no disco, com o editor que você já usa. Deve rodar bem em hardware modesto (a máquina de referência tem GPU Intel integrada).
+2. **Performance é prioridade.** Ciclo curto entre editar e ver (hoje: cerca de 66 ms entre salvar o arquivo e o DataModel), taxa de quadros estável e nenhum custo escondido. Toda afirmação de desempenho vem de uma medição (`STUDIO_EXIT_AFTER` imprime o FPS), não de opinião.
+3. **Desenvolvimento aberto.** Código aberto (MIT ou Apache-2.0), feito às claras: as decisões ficam escritas em [`studio/docs/decisions.md`](studio/docs/decisions.md), o trabalho é acompanhado em issues públicas e contribuições são bem-vindas dentro da [regra clean-room](CONTRIBUTING.md).
+
 ## Por que existe
 
 - O Roblox Studio não roda no Linux. Quem desenvolve nele precisa de Windows, macOS ou gambiarras.
