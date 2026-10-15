@@ -1,0 +1,34 @@
+# Compilação e saídas locais
+target/
+studio/target/
+harness/out/
+studio/harness/out/
+__pycache__/
+*.pyc
+
+# Referências clonadas pelo setup.sh (rojo, rbx-dom, lune): somente leitura, não fazem parte do projeto
+refs/
+
+# Jogo-alvo de testes (código do autor, não faz parte da engine) e cópia de teste
+rubix/
+rubix-test/
+
+# Material de referência visual e ferramentas instaladas localmente
+reference/*
+!reference/README.md
+tools/lune-root/
+
+# Configuração local do Claude Code
+.claude/settings.local.json
+
+# Specs derivadas do jogo-alvo (design do RUBIX): ficam só na máquina do autor
+studio/docs/resultado-esperado.md
+studio/docs/rubix-compat.md
+
+# Material interno de trabalho (plano, skills, notas): fica só na máquina do autor
+.claude/
+CLAUDE.md
+COMECE-AQUI.md
+TEAM.md
+reference/
+studio/harness/evals/

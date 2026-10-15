@@ -1,0 +1,51 @@
+{
+  "_legend": {
+    "ok": "implementado e testado",
+    "planned": "vai ser implementado para valer",
+    "stub": "aceito, mas sem efeito real (silencioso)",
+    "missing": "ainda sem plano"
+  },
+  "services": {
+    "Players": "planned",
+    "Workspace": "planned",
+    "ReplicatedStorage": "planned",
+    "ServerScriptService": "planned",
+    "RunService": "planned",
+    "UserInputService": "planned",
+    "ContextActionService": "planned",
+    "TweenService": "planned",
+    "CollectionService": "planned",
+    "Debris": "planned",
+    "DataStoreService": "stub",
+    "HttpService": "stub",
+    "TextService": "stub"
+  },
+  "classes": {
+    "Part": "planned",
+    "Model": "planned",
+    "Folder": "planned",
+    "RemoteEvent": "planned",
+    "BindableEvent": "planned",
+    "Humanoid": "planned",
+    "WeldConstraint": "planned",
+    "BodyVelocity": "planned",
+    "ClickDetector": "planned",
+    "Attachment": "planned",
+    "ScreenGui": "stub",
+    "Frame": "stub",
+    "TextLabel": "stub",
+    "TextButton": "stub",
+    "ScrollingFrame": "stub",
+    "BillboardGui": "stub",
+    "UICorner": "stub",
+    "UIStroke": "stub",
+    "UIPadding": "stub",
+    "UIListLayout": "stub",
+    "UIGradient": "stub",
+    "ParticleEmitter": "planned",
+    "Fire": "planned",
+    "Trail": "planned",
+    "PointLight": "planned",
+    "Highlight": "planned"
+  }
+}

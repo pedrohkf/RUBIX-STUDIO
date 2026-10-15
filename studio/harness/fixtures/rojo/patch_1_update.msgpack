@@ -1,0 +1,18 @@
+É©sessionIdŸ$7aaa8c14-7192-436e-973d-8dc90b2db8c9™packetType®messages§bodyÇ≠messageCursor®messagesëÉßremovedê•addedÄßupdatedëÖ¢idŸ e979842fa9a42871ab3eabcbf0bc259e´changedName¿∞changedClassName¿±changedPropertiesÅ¶SourceÅ¶String⁄Æ-- Cor da barra de vida por faixa: verde, amarelo, laranja, vermelho.
+local HealthColor = {}
+
+function HealthColor.of(fraction: number): Color3
+	if fraction >= 0.6 then
+		return Color3.fromRGB(80, 200, 80)
+	elseif fraction >= 0.3 then
+		return Color3.fromRGB(230, 200, 60)
+	elseif fraction >= 0.1 then
+		return Color3.fromRGB(240, 140, 40)
+	end
+	return Color3.fromRGB(220, 50, 50)
+end
+
+return HealthColor
+
+-- editado pelo fixture
+ØchangedMetadata¿

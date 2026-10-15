@@ -1,0 +1,18 @@
+{
+  "name": "SampleGame",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": { "$path": "src/shared" }
+    },
+    "ServerScriptService": {
+      "Server": { "$path": "src/server" }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$ignoreUnknownInstances": true,
+        "Client": { "$path": "src/client" }
+      }
+    }
+  }
+}
